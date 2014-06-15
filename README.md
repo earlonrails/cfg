@@ -2,6 +2,7 @@ Install
 ---
 
 copy all apart from the autoexec.cfg to your dota/cfg folder. Located roughly:
+
 windows
 
     C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/dota/cfg
