@@ -23,9 +23,9 @@ Use
 
 This should work without the hero dependent features out of the box. When you want to use these, you will need to open the console and type `exec hero\'name'` where name is the 'name' of the hero. These are diffrent to normal in most cases, but the common DotA2 player will know them. And example of getting Axe and Naga Siren:
    
-   exec hero\axe
-   exec hero\naga
-   
+    exec hero\axe
+    exec hero\naga
+    
 Bugs & features
 ---
 Please report bugs and features here on github. Just raise a new issue for both.
