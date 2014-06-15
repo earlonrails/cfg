@@ -1,0 +1,8 @@
+
+alias "range0" "dota_range_display 300"
+alias "range1" "dota_range_display 350"
+//alias "range2" "dota_range_display "
+//alias "range3" "dota_range_display "
+//alias "range4" "dota_range_display "
+alias "range5" "dota_range_display 625"
+

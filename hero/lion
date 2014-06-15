@@ -1,0 +1,10 @@
+
+alias attackrange "dota_range_display 600"
+
+alias "range0" "dota_range_display 500"
+alias "range1" "dota_range_display 500"
+alias "range2" "dota_range_display 750"
+//alias "range3" "dota_range_display "
+//alias "range4" "dota_range_display "
+alias "range5" "dota_range_display 700"
+

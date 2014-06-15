@@ -1,0 +1,20 @@
+
+alias attackrange "dota_range_display 550"
+
+//Take aim
+alias takeAim0 "alias attackrange dota_range_display 625"
+alias takeAim1 "alias attackrange dota_range_display 700"
+alias takeAim2 "alias attackrange dota_range_display 775"
+alias takeAim3 "alias attackrange dota_range_display 850"
+alias up02 "takeAim0;attackrange"
+alias up12 "takeAim1;attackrange"
+alias up22 "takeAim2;attackrange"
+alias up32 "takeAim3;attackrange"
+
+alias "range0" "dota_range_display 1200"
+//alias "range1" "dota_range_display "
+//alias "range2" "dota_range_display "
+//alias "range3" "dota_range_display "
+//alias "range4" "dota_range_display "
+alias "range5" "dota_range_display 3000"
+
