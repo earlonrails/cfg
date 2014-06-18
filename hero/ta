@@ -1,0 +1,20 @@
+
+alias attackrange "dota_range_display 140"
+
+//Psi blades
+alias psiBlades0 "alias attackrange dota_range_display 200"
+alias psiBlades1 "alias attackrange dota_range_display 260"
+alias psiBlades2 "alias attackrange dota_range_display 320"
+alias psiBlades3 "alias attackrange dota_range_display 380"
+alias up02 "psiBlades0;attackrange"
+alias up12 "psiBlades1;attackrange"
+alias up22 "psiBlades2;attackrange"
+alias up32 "psiBlades3;attackrange"
+
+//alias "range0" "dota_range_display "
+//alias "range1" "dota_range_display "
+//alias "range2" "dota_range_display "
+//alias "range3" "dota_range_display "
+//alias "range4" "dota_range_display "
+alias "range5" "dota_range_display 2000"
+

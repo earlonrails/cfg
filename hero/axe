@@ -1,0 +1,17 @@
+
+//Culling Blade
+alias hp0 "dota_health_per_vertical_marker 250"
+alias hp1 "dota_health_per_vertical_marker 350"
+alias hp2 "dota_health_per_vertical_marker 450"
+alias up05 "hp0;echo yolo"
+alias up15 "hp1;echo swag"
+alias up25 "hp2;echo meh?"
+
+alias "range0" "dota_range_display 275"
+alias "range1" "dota_range_display 900"
+alias "range2" "dota_range_display 275"
+//alias "range3" "dota_range_display "
+//alias "range4" "dota_range_display "
+alias "range5" "dota_range_display 150"
+
+echo axe

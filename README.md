@@ -1,54 +1,38 @@
-My comments
---------------------
-I found this repo on reddit, can't seem to find the link right now. I want to give credit here to the person that started this. Just wanted to share it with others.
-
-This is a collection of scripts for Dota 2. The autoexec.cfg will start everything off and there are supposed to be ranges
-for each character. I haven't seen these work yet. I have also included some of the macros I use and have mostly found online from reddit and other sources.
-
-For mac, not the best OS for playing dota btw, the location of the cfg should be here
-
-    open ~/Library/Application Support/Steam/SteamApps/common/dota 2 beta/dota/cfg
-
-Original Source Instructions
-----------------------------
-I cannot promise that these scripts will not horribly break your dota2, or break on an update, new heroes will have to be manually added in, you can contact me for that.
-Furthermore I cannot guarnatee accurate of the ranges themselves, I am only going off the wiki, and playdota where necessary.
-
-If you spot any ranges that are wrong, give me a shout.
-
-You can contact me on steam at http://steamcommunity.com/id/kamer
-
+Install
 ---
 
-Navigate to steam\steamapps\common\dota 2 beta\dota\cfg and extract the contents of cfg there.
+copy all apart from the autoexec.cfg to your dota/cfg folder. Located roughly:
 
+windows
 
-Edit the contents of keybindings.cfg to suit your control layout.
+    C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/dota/cfg
+    C:/Program Files/Steam/steamapps/common/dota 2 beta/dota/cfg
 
+linux
 
-Shift will toggle between attack range (on ranged heroes), and blink range (on heroes who typically grab blink), and some other things, such as tinkers homing missiles.
+    ~/.steam/steam/SteamApps/common/dota 2 beta/dota/cfg
+    
+mac
 
+    ~/Library/Application Support/Steam/SteamApps/common/dota 2 beta/dota/cfg
 
-If you would rather only have blink range only appear when shift is pressed, remove "bind shift variablerange" and uncomment "bind shift "dota_range_display 1200"
+For the autoexec.cfg, copy the contents to prefrably the bottom of your current autoexec.cfg.
 
+Use
+---
 
-If you do not have an autoexec.cfg, copy autoexec.cfg into the cfg folder
+This should work without the hero dependent features out of the box. When you want to use these, you will need to open the console and type `exec hero\'name'` where name is the 'name' of the hero. These are diffrent to normal in most cases, but the common DotA2 player will know them. And example of getting Axe and Naga Siren:
+   
+    exec hero\axe
+    exec hero\naga
+    
+Bugs & features
+---
+Please report bugs and features here on github. Just raise a new issue for both.
 
+How it works
+---
+This uses the fact that ctrl ability, levels the pressed ability up. This allows us to utalis a little loop, that counts to 4 on normal abilites and 3 on your ult. Each time you level up you exicute a small command, that defults to a small echo, however hero's like axe have it so that your health per verticle marker changes each level of culling blade, to easily determin if you can deal an insta-kill. Or hero's like sniper increase there range.
+We also utalise a modifyer on the ctrl key to determin if you are casting your ability or leveling it up.
 
-Enable the console by right clicking dota 2 in your steam library > propeties > set launch options, and add "-console", without quotes.
-
-
-Once ingame, goto options > controls > abilities, and clear the default skill hotkeys (bind them all to delete or something).
-
-
-After you've selected a hero, press ~ to pull up the console, and type exec <heroname> (some heroes used their most common name (this is solely personal preference), like Natures Prophet is Furion, you can edit these manually, by renaming the .cfg files in cfg)
-
-Level up skills by holding ctrl and pressing the respective hotkey (ctrl q will level up your first skill, for example.  Theres no way to actually track your heroes skill levels, so you have to use this shortcut for the scripts to watch what level everything is.)
-
-QWER with the default keybindings will pull up circular range indicators when pressed.
-
-
-For heroes like Invoker, and Rubick, it is impossible to setup scripts that work properly, so dont expect perfect functionality.
-
-
-There are templates included to add in ranges for new heroes, if im not around to provide updates, you can look up the numbers and try and edit things to match others.
+The other code is currently rather simple, so if you want to know how that works I recomend you look at it.
